@@ -45,6 +45,23 @@
   margin-bottom: 1.5rem;
 }
 
+.filters-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters-card input,
+.filters-card select {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.76);
+  color: #f8fafc;
+  padding: 0.95rem 1rem;
+}
+
 .task-form {
   display: grid;
   gap: 0.85rem;
@@ -83,6 +100,23 @@
   cursor: pointer;
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ghost-button {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  background: transparent;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
 .board-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(220px, 1fr));
@@ -99,6 +133,7 @@
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
+  align-items: center;
 }
 
 .board-column h2,
@@ -124,6 +159,13 @@
   border: 1px solid rgba(148, 163, 184, 0.14);
 }
 
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: end;
+}
+
 .task-meta {
   margin-bottom: 0.65rem;
   font-size: 0.82rem;
@@ -147,7 +189,8 @@
   }
 
   .hero,
-  .form-row {
+  .form-row,
+  .filters-card {
     grid-template-columns: 1fr;
     display: grid;
   }
